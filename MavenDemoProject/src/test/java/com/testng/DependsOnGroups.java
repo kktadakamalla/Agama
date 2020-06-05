@@ -1,5 +1,7 @@
 package com.testng;
 
-public class DependsOnGroups {
-
+public class DependsOnGroups {	
+	
+	
 }
+
