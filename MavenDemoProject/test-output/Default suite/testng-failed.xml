@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.DependenceuponMethods">
+      <class name="Redbusinhomework">
         <methods>
           <include name="login"/>
-          <include name="Search"/>
         </methods>
-      </class> <!-- com.testng.DependenceuponMethods -->
+      </class> <!-- Redbusinhomework -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
