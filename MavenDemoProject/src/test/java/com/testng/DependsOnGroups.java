@@ -11,7 +11,7 @@ public class DependsOnGroups {
 @Test(groups= {"smoketesting", "regressiontesting"})
 	  public void Search() {
 		  System.out.println("Search");
-		  //Assert.assertEquals("xyz", "abc");
+		  Assert.assertEquals("abc", "abc");
 }
 		 @Test(groups= {"regressiontesting", "retesting"})
 	  

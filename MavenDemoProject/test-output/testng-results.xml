@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-08T19:49:52 EDT" name="Default suite" finished-at="2020-06-08T19:49:59 EDT" duration-ms="7278">
+  <suite started-at="2020-06-09T16:31:31 EDT" name="Default suite" finished-at="2020-06-09T16:31:31 EDT" duration-ms="107">
     <groups>
     </groups>
-    <test started-at="2020-06-08T19:49:52 EDT" name="Default test" finished-at="2020-06-08T19:49:59 EDT" duration-ms="7278">
-      <class name="Redbusinhomework">
-        <test-method signature="login()[pri:0, instance:Redbusinhomework@16e7dcfd]" started-at="2020-06-08T19:49:52 EDT" name="login" finished-at="2020-06-08T19:49:59 EDT" duration-ms="7203" status="PASS">
+    <test started-at="2020-06-09T16:31:31 EDT" name="Default test" finished-at="2020-06-09T16:31:31 EDT" duration-ms="107">
+      <class name="com.testng.DependenceuponMethods">
+        <test-method signature="login()[pri:0, instance:com.testng.DependenceuponMethods@36bc55de]" started-at="2020-06-09T16:31:31 EDT" name="login" finished-at="2020-06-09T16:31:31 EDT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- Redbusinhomework -->
+        <test-method signature="search()[pri:0, instance:com.testng.DependenceuponMethods@36bc55de]" started-at="2020-06-09T16:31:31 EDT" name="search" finished-at="2020-06-09T16:31:31 EDT" depends-on-methods="com.testng.DependenceuponMethods.login" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method signature="logout()[pri:0, instance:com.testng.DependenceuponMethods@36bc55de]" started-at="2020-06-09T16:31:31 EDT" name="logout" finished-at="2020-06-09T16:31:31 EDT" depends-on-methods="com.testng.DependenceuponMethods.search" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.testng.DependenceuponMethods -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

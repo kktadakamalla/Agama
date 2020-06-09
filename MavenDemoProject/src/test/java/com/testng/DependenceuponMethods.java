@@ -2,22 +2,23 @@ package com.testng;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
+
 public class DependenceuponMethods {
 
-@Test
-	public void login() {
-		  System.out.println("Login");
-		    }
-@Test(dependsOnMethods="login")
-	  public void Search() {
-		  System.out.println("Search");
-		  Assert.assertEquals("xyz", "abc");
-}
-		 @Test(dependsOnMethods="search",alwaysRun=true)
-	  
-	  public void logout() {
-		  System.out.println("Logout");
-	  }
+	@Test()
+	public void login(){
+		System.out.println("login");
+		}
+
+	@Test(dependsOnMethods="login")
+	public void search(){
+		System.out.println("search");
+		Assert.assertEquals("abc", "abc");
+		}
+
+	@Test(dependsOnMethods="search", alwaysRun=true)
+	public void logout(){
+		System.out.println("logout");
+		}
 
 }

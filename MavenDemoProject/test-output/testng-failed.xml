@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Redbusinhomework">
+      <class name="com.testng.Testngexample">
         <methods>
-          <include name="login"/>
+          <include name="Setup"/>
+          <include name="quit"/>
+          <include name="Login"/>
+          <include name="Openurl"/>
+          <include name="postlogout"/>
         </methods>
-      </class> <!-- Redbusinhomework -->
+      </class> <!-- com.testng.Testngexample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

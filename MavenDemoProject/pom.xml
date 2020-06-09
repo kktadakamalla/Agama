@@ -3,29 +3,72 @@
   <groupId>mavendemo</groupId>
   <artifactId>mavendemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+  <plugins>
+  <plugin> 
+  <groupId>org.apache.maven.plugins</groupId> 
+  <artifactId>maven-surefire-plugin</artifactId> 
+  <version>2.19.1</version> 
+  <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+<plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-compiler-plugin</artifactId>
+   <version>3.0</version>
+   <configuration>
+      <source>1.7</source>
+      <target>1.7</target>
+   </configuration>
+</plugin>
+</plugins>
+</build>  
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java-->
+  
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.8.7</version>
+    <scope>provided</scope>
+    <optional>true</optional>
+</dependency>  
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>3.141.59</version>
 </dependency>
-
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>4.0.0</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-htmlunit-driver -->
+
 <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>6.14.3</version>
-    <scope>test</scope>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>2.35.0</version>
+</dependency> 
+
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.7</version>
 </dependency>
-
-      
-
     </dependencies>
+    
+    
+ <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties> 
 </project>
+
+
